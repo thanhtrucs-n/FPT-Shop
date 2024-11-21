@@ -1,0 +1,113 @@
+.cart_group {
+  background: var(--main);
+  padding-bottom: 40px;
+
+  .cart__title {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cart {
+    background-color: var(--white);
+    width: 70%;
+    margin: 0 auto;
+
+    table {
+      // display: flex;
+      width: 100%;
+      padding: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+      .img_cart {
+        width: 90px;
+        height: 90px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+
+        img {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+
+      tr {
+        display: flex;
+        justify-content: space-between;
+        td {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          padding: 15px;
+
+          h3 {
+            font-size: 16px;
+          }
+
+          h4 {
+            font-size: 14px;
+          }
+
+          button {
+            cursor: pointer;
+            width: 30px;
+            height: 20px;
+            border: none;
+          }
+
+          .amount {
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+        }
+      }
+
+      .amount_group {
+        display: flex;
+        border: solid 1px #dfdfdf;
+      }
+
+      .delete_cart {
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  .cart_total {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+
+    &__price {
+      &--total {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .ghr-1 {
+        margin-right: 20px;
+        font-weight: 500;
+      }
+
+      .ghr-2 {
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      &--number {
+        font-size: 16px;
+        font-weight: bold;
+        color: #d0021b;
+      }
+
+      &--number-light {
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+}

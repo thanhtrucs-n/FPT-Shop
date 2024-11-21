@@ -1,0 +1,36 @@
+.backImage {
+  // overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .img__left {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+
+    &--cherry {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .img__right {
+    position: relative;
+    display: block;
+    top: 0;
+    right: 0;
+
+    &--apricot {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
