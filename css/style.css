@@ -644,3 +644,9 @@
       background-color: #6c757d;
     }
   
+.cart a {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+}
